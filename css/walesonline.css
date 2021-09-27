@@ -2,9 +2,9 @@ body {
   font-family: "Open Sans",sans-serif;
   font-size: 16px;
   font-weight: 400;
+  color: #141414;
   background: #fff;
   box-sizing: border-box;
-  color: #141414;
   margin-top: 90px;
   padding: 0;
   width: 100%;
@@ -12,11 +12,14 @@ body {
 
 h1 {
   font-size: 48px;
+  font-weight: 600;
   border-left: 8px solid #db0000;
   padding-top: 10px;
   line-height: 1.2;
-  font-weight: 600;
   letter-spacing: 1.5px;
+}
+h2, h3, h4, em {
+  color: #db0000;
 }
 
 a {
@@ -24,22 +27,22 @@ a {
 }
 
 article h1:before {
-  background-color: #626262;
-  content: "";
-  height: calc(100% - 25px);
-  left: -32px;
   position: absolute;
   top: 50%;
-  transform: translate(0, -50%);
+  left: -32px;
+  height: calc(100% - 25px);
   width: 12px;
+  background-color: #626262;
+  content: "";
+  transform: translate(0, -50%);
 }
 
 .nav-header {
   display: block;
+  margin: 0 32px 10px;
   font-family: "Open Sans",sans-serif;
   font-size: 11px;
   font-weight: 700;
-  margin: 0 32px 10px;
 }
 
 .nav-header ul {
@@ -212,6 +215,10 @@ ul.time-info li:not(ul:first-child){
   opacity: .9;
 }
 
+.article-body {
+  max-width: min-content;
+}
+
 .article-body p a {
   color: #db0000;
   font-weight: bold;
@@ -235,6 +242,14 @@ ul.time-info li:not(ul:first-child){
   font-weight: 700;
   color: #2c2c2c;
 }
+
+.article-table table, th, td {
+  border: 1px solid #db0000;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+tr:nth-child(even) {background-color: #f1f1f1;}
 
 .credit {
   font-family: "Open Sans",sans-serif;
@@ -291,6 +306,10 @@ ul.time-info li:not(ul:first-child){
   background-color: dimgray;
 }
 
+.disable {
+  display: none;
+}
+
 .most-read {
   background-color: #fff0f0;
 }
@@ -345,6 +364,7 @@ ul.time-info li:not(ul:first-child){
 }
 
 .recommended h2 {
+  color: #141414;
   border-bottom: 2px solid #f1f1f1;
   font-size: 13px;
   font-weight: bold;
