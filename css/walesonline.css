@@ -229,6 +229,7 @@ ul.time-info li:not(ul:first-child){
   display: flex;
   position: relative;
   margin-top: 23px;
+  width: 800px;
 }
 
 .content {
@@ -320,6 +321,9 @@ tr:nth-child(even) {background-color: #f1f1f1;}
   padding: 20px 12px 0;
   text-transform: uppercase;
   color: #db0000;
+  font-weight: bold;
+  display: contents;
+  font-family: "Signika Negative Bold",sans-serif !important;
 }
 
 .most-read-list {
@@ -331,6 +335,7 @@ tr:nth-child(even) {background-color: #f1f1f1;}
 .box img {
   float: left;
   margin: 10px;
+  width: 50%;
 }
 
 .box .title {
@@ -345,6 +350,14 @@ tr:nth-child(even) {background-color: #f1f1f1;}
   text-decoration: none;
 }
 
+.first {
+  display: grid;
+}
+
+.first img {
+  width: 100%;
+}
+
 .most-read-item {
   margin-bottom: 12px;
   text-decoration: none;
@@ -356,11 +369,11 @@ tr:nth-child(even) {background-color: #f1f1f1;}
   background-color: #db0000;
   font-weight: 700;
   padding: 4px 8px;
+  margin: 0 10px;
 }
 
-.most-read .most-read-item img {
-  height: auto;
-  width: 35%;
+.recommended {
+  display: grid;
 }
 
 .recommended h2 {
@@ -371,10 +384,21 @@ tr:nth-child(even) {background-color: #f1f1f1;}
   letter-spacing: 1px;
   margin-bottom: 12px;
   padding-bottom: 12px;
+  width: 300px;
   text-transform: uppercase;
 }
+
 .recommended-item {
   border-bottom: 2px solid #f1f1f1;
+  font-weight: bold;
+  font-size: 13.5px;
+  padding: 5px;
+}
+
+.recommended-item img {
+  width: 50%;
+  float: left;
+  padding: 4px;
 }
 
 @font-face {
