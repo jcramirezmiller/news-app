@@ -26,6 +26,11 @@ a {
   text-decoration: none;
 }
 
+figure {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
 article h1:before {
   position: absolute;
   top: 50%;
@@ -206,7 +211,7 @@ ul.time-info li:not(ul:first-child){
   font-size: 24px;
 }
 .article-news a{
-  color:white;
+  color:#ffffff;
   padding: 8px 24px;
   text-transform: uppercase;
   font-weight: 700;
@@ -214,6 +219,15 @@ ul.time-info li:not(ul:first-child){
 .article-news:hover{
   opacity: .9;
 }
+
+.article-container {
+  display: flex;
+  position: relative;
+  margin-top: 23px;
+  /* width: 800px; */
+  /* width: 70%; */
+}
+
 
 .article-body {
   max-width: min-content;
@@ -229,12 +243,13 @@ ul.time-info li:not(ul:first-child){
   display: flex;
   position: relative;
   margin-top: 23px;
-  width: 800px;
+  /* width: 800px; */
 }
 
 .content {
   margin-left: 32px;
   margin-right: 32px;
+  max-width: 800px;
 }
 
 .article-container figcaption {
@@ -304,11 +319,16 @@ tr:nth-child(even) {background-color: #f1f1f1;}
 .weeks-navigation a:hover {
   color: #f1f1f1;
   font-weight: 700;
-  background-color: dimgray;
+  background-color:#696969;
 }
 
 .disable {
   display: none;
+}
+
+aside {
+  padding-left: 32px ;
+  border-left: 3px solid #f1f1f1;
 }
 
 .most-read {
@@ -335,12 +355,12 @@ tr:nth-child(even) {background-color: #f1f1f1;}
 .box img {
   float: left;
   margin: 10px;
-  width: 50%;
+  width: 40%;
 }
 
 .box .title {
   display: flex;
-  color: black;
+  color: #141414;
   font-family: "Open Sans",sans-serif;
   font-size: 14px;
   font-weight: bold;
@@ -355,7 +375,7 @@ tr:nth-child(even) {background-color: #f1f1f1;}
 }
 
 .first img {
-  width: 100%;
+  width: 75%;
 }
 
 .most-read-item {
@@ -384,7 +404,7 @@ tr:nth-child(even) {background-color: #f1f1f1;}
   letter-spacing: 1px;
   margin-bottom: 12px;
   padding-bottom: 12px;
-  width: 300px;
+  /* width: 300px; */
   text-transform: uppercase;
 }
 
@@ -396,7 +416,7 @@ tr:nth-child(even) {background-color: #f1f1f1;}
 }
 
 .recommended-item img {
-  width: 50%;
+  width: 40%;
   float: left;
   padding: 4px;
 }
@@ -491,7 +511,7 @@ tr:nth-child(even) {background-color: #f1f1f1;}
   }
   .icon-link:before {
     content: "\e9cb";
-    color:darkred;
+    color: #db0000;
   }
   .icon-attachment:before {
     content: "\e9cd";
@@ -510,7 +530,7 @@ tr:nth-child(even) {background-color: #f1f1f1;}
   }
   .icon-facebook:before {
     content: "\ea90";
-    color: blue;
+    color: #0000ff;
   }
   .icon-facebook2:before {
     content: "\ea91";
@@ -523,6 +543,6 @@ tr:nth-child(even) {background-color: #f1f1f1;}
   }
   .icon-twitter:before {
     content: "\ea96";
-    color: lightseagreen;
+    color: #20b2aa;
   }
   
