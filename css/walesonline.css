@@ -3,11 +3,16 @@ body {
   font-size: 16px;
   font-weight: 400;
   color: #141414;
-  background: #fff;
+  background: #f1f1f1;
   box-sizing: border-box;
   padding: 0;
   margin:0;
   width: 100%;
+}
+
+main {
+  margin: 0 12.5px;
+  background-color: #ffffff;
 }
 
 h1 {
@@ -15,8 +20,9 @@ h1 {
   font-weight: 600;
   border-left: 8px solid #db0000;
   padding-top: 10px;
+  font-family: 'signika-negative-bold', sans-serif;
   line-height: 1.2;
-  letter-spacing: 1.5px;
+  letter-spacing: -1px;
 }
 h2, h3, h4, em {
   color: #db0000;
@@ -194,6 +200,7 @@ ul.time-info {
   display: flex;
   font-size: 11px;
   list-style: none;
+  padding-left: 0px;
 }
 
 ul.time-info li {
@@ -201,20 +208,24 @@ ul.time-info li {
   padding-left: 10px;
 }
 
-ul.time-info li:not(ul:first-child){
+ul.time-info li:not(:first-child){
   border-left: 1px solid gray;
   padding-left: 5px;
 }
 
-.article-news {
+/* .article-news {
   background-color: #db0000 !important;
   font-size: 24px;
-}
+} */
 .article-news a{
-  color:#ffffff;
   padding: 8px 24px;
+  font-size: 130%;
+  font-family: 'signika-negative-bold', sans-serif;
+  font-weight: 600;
+  line-height: 1;
+  color:#ffffff;
+  background-color: #db0000 !important;
   text-transform: uppercase;
-  font-weight: 700;
 }
 .article-news:hover{
   opacity: .9;
